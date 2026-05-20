@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    'sms_provider' => [
+        'base_url' => env('SMS_PROVIDER_BASE_URL'),
+    ],
+    'email_provider' => [
+        'base_url' => env('EMAIL_PROVIDER_BASE_URL'),
+    ],
+    'push_provider' => [
+        'base_url' => env('PUSH_PROVIDER_BASE_URL'),
+    ],
+
 ];
