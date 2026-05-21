@@ -23,7 +23,7 @@ Microserviço de comunicação centralizada responsável por receber, enfileirar
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/fernandoadev/ms-notification
 cd ms-notification
 ```
 
@@ -133,11 +133,11 @@ app/
 ├── Clients/          # Integrações HTTP com provedores externos (SMS, Email, Push)
 ├── DataTransferObjects/  # DTOs tipados para transporte entre camadas
 ├── Enums/            # Constantes de domínio (canal, status, nível de log)
-├── Helpers/          # Utilitários estáticos (LogHelper)
+├── Helpers/          # Utilitários estáticos
 ├── Http/
-│   ├── Controllers/  # Recebe a request, delega ao service, retorna response
+│   ├── Controllers/
 │   └── Requests/     # Validação de entrada via Form Request
-├── Jobs/             # ProcessCommunicationJob — processamento assíncrono
-├── Models/           # Communication, CommunicationLog
-└── Services/         # Regras de negócio (CommunicationService, CommunicationProcessService)
+├── Jobs/             # processamento assíncrono
+├── Models/
+└── Services/         # Regras de negócio
 ```
