@@ -26,7 +26,7 @@ class CommunicationController extends Controller
                 [
                     'message' => 'Communication request received and is being processed.',
                     'communication' => $communication->toArray(),
-                ], 202);
+                ], 201);
 
         } catch (\Exception $e) {
             $this->logHelper->create(

@@ -22,6 +22,7 @@ return new class extends Migration
             $table->json('context')
                 ->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
             $table->index('level');
         });

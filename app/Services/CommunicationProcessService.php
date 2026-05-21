@@ -27,9 +27,9 @@ class CommunicationProcessService
 
     public function process(string $communicationId, int $attempts): void
     {
-        try {
-            $communication = $this->model->findOrFail($communicationId);
+        $communication = $this->model->findOrFail($communicationId);
 
+        try {
             $communication->update([
                 'status' => CommunicationStatusEnum::PROCESSING->value,
                 'attempts' => $attempts,

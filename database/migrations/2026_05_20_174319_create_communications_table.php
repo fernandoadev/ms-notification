@@ -27,6 +27,7 @@ return new class extends Migration
             $table->timestamp('failed_at')
                 ->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
             $table->index('status');
             $table->index('channel');
